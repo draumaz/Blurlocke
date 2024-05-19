@@ -1,0 +1,49 @@
+{
+  "preset_info": {
+    "version": 13,
+    "title": "Blurlocke",
+    "description": "",
+    "author": "draumaz",
+    "width": 540,
+    "height": 1200,
+    "xscreens": 4,
+    "features": "MUSIC",
+    "release": 370303215,
+    "locked": false,
+    "pflags": 0
+  },
+  "preset_root": {
+    "internal_type": "RootLayerModule",
+    "internal_toggles": {
+      "config_visible": 0
+    },
+    "internal_formulas": {
+      "config_visible": ""
+    },
+    "background_type": "IMAGE",
+    "background_bitmap": "kfile://org.kustom.provider/bitmaps/IMG174e444930e7631e1f64d056fd1a32cf",
+    "config_visible": "IF_LOCKED",
+    "viewgroup_items": [
+      {
+        "internal_type": "BitmapModule",
+        "internal_toggles": {
+          "bitmap_bitmap": 10
+        },
+        "internal_formulas": {
+          "bitmap_bitmap": "$mi(cover)$"
+        },
+        "bitmap_width": 2950.0,
+        "bitmap_blur": 100.0,
+        "position_anchor": "CENTER",
+        "internal_animations": [
+          {
+            "type": "FORMULA",
+            "action": "FADE",
+            "formula": "$mi(state)=PAUSED|mi(state)=STOPPED$",
+            "duration": 2.0
+          }
+        ]
+      }
+    ]
+  }
+}
