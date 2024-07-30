@@ -33,7 +33,7 @@
           "bitmap_bitmap": "$mi(cover)$"
         },
         "bitmap_width": 2950.0,
-        "bitmap_blur": 100.0,
+        "bitmap_blur": 35.0,
         "position_anchor": "CENTER",
         "internal_animations": [
           {
